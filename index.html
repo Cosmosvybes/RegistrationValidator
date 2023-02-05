@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+
+<body>
+
+    <form onsubmit="return validate()" action="Wlc.html">
+
+        <h2> Registration Page </h2>
+        <h6 id="invalid_message"> invalid credientials </h6>
+        <label>
+            <input id="fname" type="text" placeholder="First name" />
+
+        </label>
+        <label>
+
+            <input id="sname" type="text" placeholder="Second name" />
+        </label>
+        <label>
+            <input id="email" type="email" placeholder="Email" />
+        </label>
+        <label>
+
+            <input id="pass" type="password" placeholder="Password" />
+        </label>
+        <label>
+
+            <input id="repeat" type="password" placeholder="Repeat Password" />
+
+        </label>
+        <input onclick="checkPass()" type="checkbox" /> check password
+        <br />
+        <input type="radio" id="male" name="gender" /> male
+        <input type="radio" id="female" name="gender" /> female
+        <button> submit</button>
+
+
+
+
+    </form>
+
+    <script src="Login.js">
+
+    </script>
+</body>
+
+</html>
